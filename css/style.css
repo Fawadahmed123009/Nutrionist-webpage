@@ -1,0 +1,650 @@
+/* Base styles (existing styles) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 90;
+}
+
+.header .logo img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: black;
+  margin-left: 4rem;
+  transition: .2s;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home {
+  min-height: 80vh;
+  background: #e4f0e4;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+  padding: 10rem 5% 0;
+}
+
+.home .heading {
+  color: #146006;
+  font-size: 5em;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.home .cta-button {
+  background-color: #f9fcd9;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid #006400;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.home .cta-button:hover {
+  background-color: #e0e0d1;
+  transform: scale(1.05);
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem 5% 0;
+}
+
+.about .about-title {
+  font-size: 6em;
+  line-height: 1;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.about .about-title span {
+  display: block;
+}
+
+.about .about-title .us {
+  color: #2e8b57;
+}
+
+.about .about-title img {
+  margin-top: 50px;
+  width: 25rem;
+}
+
+.about .about-text {
+  margin-left: 150px;
+  font-size: 1.42em;
+  line-height: 2.5;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.menu {
+  padding: 5rem 5% 0;
+}
+
+.menu h2 {
+  font-size: 6em;
+  line-height: 1;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
+.menu span {
+  color: #2e8b57;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 5rem 0;
+}
+
+.menu-container .meal-box {
+  flex: 1 1 20rem;
+  padding: 0 0 5rem;
+  border-radius: 0.5rem;
+  background: #FFFAEE;
+  text-align: center;
+  border: .15rem solid #3E9073;
+  transition: .5s ease;
+}
+
+.meal-box img {
+  width: 100%;
+  border-radius: 0;
+}
+
+.meal-box h3 {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.meal-box h1 {
+  font-size: 2.6rem;
+  margin: 1rem 0 3rem;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+.meal-box .cta-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid #006400;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.meal-box .cta-button:hover {
+  background-color: #e0e0d1;
+  transform: scale(1.05);
+}
+
+.mp-family, .mp-busy, .mp-student {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  color: #09EA5F;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'PT Sans', sans-serif;
+  -webkit-text-stroke: 0.001px #3E9073;
+}
+
+.container1 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-image img {
+  margin-top: 2rem;
+  width: 25rem;
+  margin-left: 5rem;
+}
+
+.d-image img {
+  margin-top: 2rem;
+  width: 24rem;
+  margin-left: 5rem;
+}
+
+.recipe {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.recipe h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.recipe h3 {
+  font-size: 2rem;
+  margin-left: 8rem ;
+  margin-top: 10px;
+  color: #006400;
+  text-align: left;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+.recipeh3{
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-left: 10rem;
+  color: #006400;
+  text-align: left;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+.ingredients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ingredients-1{
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 10px 0;
+  font-family: 'PT Sans', sans-serif;
+}
+
+
+.ingredients-2, .ingredients-4 {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin-left: 10rem;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.ingredients-1 li, .ingredients-2 li, .ingredients-4 li {
+  margin-bottom: 5px;
+  line-height: 40px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.container2 {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 45%;
+  padding: 10px;
+}
+
+.column h2 {
+  margin-top: 7rem;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #006400;
+  margin-left: 4rem;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-left: 4rem;
+  font-family: 'PT Sans', sans-serif;
+  color: #3E9073;
+}
+
+.step p {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  margin-left: 4rem;
+  text-align: left;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.image, .image2, .image3 {
+  margin-left: 0;
+}
+
+.image {
+  width: 16rem;
+  float: right;
+}
+
+.image2 {
+  width: 21.875rem;
+  float: right;
+}
+
+.image3 {
+  width: 16rem;
+  float: right;
+}
+
+.joinus {
+  padding: 5rem 5% 0;
+  background: #f9fcd9;
+}
+
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 6em;
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  font-size: 2em;
+  font-family: 'PT Sans', sans-serif;
+  margin-bottom: 30px;
+}
+
+.form-container {
+  display: inline-block;
+  text-align: left;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-family: 'PT Sans', sans-serif;
+  color: #333;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-container .cta-button {
+  background-color: #f9fcd9;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid #006400;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-container input[type="reset"] {
+  background-color: #ccc;
+}
+
+.form-container input[type="reset"]:hover,
+.form-container input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+footer {
+  background-color: #d1e0d0;
+  padding: 20px;
+  padding: 10rem 5% 5rem;
+  text-align: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+footer nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1em;
+}
+
+footer .footer-heading{
+  margin-top: 5rem;
+  color: #333;
+  font-size: 0.9em;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: bold;
+}
+
+
+footer .footer-text {
+  color: #333;
+  font-size: 0.9em;
+  font-family: 'Gill Sans', sans-serif;
+  font-weight: bold;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 1rem 5%;
+  }
+  .navbar a {
+    font-size: 1.3rem;
+    margin-left: 2rem;
+  }
+  .home .heading {
+    font-size: 4em;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .about-text {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+  .about .about-title {
+    font-size: 4em;
+  }
+  .about .about-title img {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 992px) { 
+  .navbar a {
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+  }
+  .home .heading {
+    font-size: 3em;
+  }
+  .menu h2 {
+    font-size: 4em;
+  }
+  .menu-container {
+    flex-direction: column;
+  }
+  .meal-box {
+    flex: 1 1 100%;
+  }
+  .ingredients {
+    flex-direction: column;
+  }
+  .container2 {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 3%;
+  }
+  .navbar a {
+    font-size: 1.1rem;
+    margin-left: 1rem;
+  }
+  .home {
+    padding: 5rem 3% 0;
+  }
+  .home .heading {
+    font-size: 2.5em;
+  }
+  .about .about-title {
+    font-size: 3em;
+  }
+  .menu h2 {
+    font-size: 3em;
+  }
+  .meal-box h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    padding: 1rem 2%;
+  }
+  .navbar a {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+  }
+  .home {
+    padding: 4rem 2% 0;
+  }
+  .home .heading {
+    font-size: 2em;
+  }
+  .home .cta-button {
+    padding: 8px 16px;
+    font-size: 0.8em;
+  }
+  .about .about-title {
+    font-size: 2.5em;
+  }
+  .about .about-title img {
+    width: 15rem;
+  }
+  .about .about-text {
+    font-size: 0.8em;
+    line-height: 1.8;
+  }
+  .menu h2 {
+    font-size: 2.5em;
+  }
+  .menu-container {
+    gap: 1rem;
+    padding: 5rem 0;
+  }
+  .meal-box h1 {
+    font-size: 1.5rem;
+  }
+  .meal-box h3 {
+    font-size: 1.2rem;
+  }
+  .title {
+    margin-left:2rem ;
+    font-size: 2rem;
+  }
+  .recipe h2 {
+    font-size: 1.5rem;
+  }
+  .recipe h3 {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .recipeh3 {
+    text-align: left;
+  }
+  .container1 {
+    flex-direction: column;
+  }
+  .ingredients {
+    flex-direction: column;
+  }
+  .ingredients-1 li,
+  .ingredients-2 li,
+  .ingredients-4 li {
+    font-size: 0.8rem;
+  }
+  .ingredients-2 {
+    margin-left: 0;
+  }
+  .container2 {
+    padding: 10px;
+  }
+  .column h2 {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
+  .step h3 {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+  .step p {
+    font-size: 0.8rem;
+    margin-left: 0;
+  }
+  .c-image img {
+    margin-left: 2rem;
+    width: 15rem;
+  }
+  .image {
+    width: 8rem;
+    height: 10rem;
+  }
+  .image2 {
+    width: 10rem;
+    height: 10rem;
+  }
+  .image3 {
+    width: 8rem;
+    height: 10rem;
+  }
+  .container {
+    padding: 2rem 2%;
+  }
+  .container h1 {
+    font-size: 3em;
+  }
+  .container h2 {
+    font-size: 1.5em;
+  }
+  .form-container {
+    padding: 20px;
+  }
+  .form-container .cta-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+  footer {
+    padding: 5rem 2% 3rem;
+  }
+  footer nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer nav a {
+    font-size: 0.9em;
+  }
+  footer .footer-heading,
+  footer .footer-text {
+    font-size: 0.8em;
+  }
+}
